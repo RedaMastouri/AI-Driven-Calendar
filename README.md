@@ -1,4 +1,4 @@
-# AI-Driven-Calendar
+# AI-Driven-Calendar {Memorify.ai}
 Ai Driven Calendar is brought to you by Reda Mastouri
 
 <img src="https://assets.website-files.com/5ec848ec2b50b6cfae06f6cc/60d60f0a9ff1afafaf212698_hero-css.svg">
