@@ -1,6 +1,11 @@
 # AI-Driven-Calendar
 Ai Driven Calendar is brought to you by Reda Mastouri
 
+![Overview][1]
+[1]: https://assets.website-files.com/5ec848ec2b50b6cfae06f6cc/60d60f0a9ff1afafaf212698_hero-css.svg "Overview"
+
+<img src="https://assets.website-files.com/5ec848ec2b50b6cfae06f6cc/60d60f0a9ff1afafaf212698_hero-css.svg">
+
 ## 1. Tell Reclaim what you need
 Connect your work and personal calendars to Reclaim and tell it what you want to make time for. All you need to do is express your needs, give a rough idea of when you want it to happen, and Reclaim takes care of the tricky Calendar Tetris.
 
