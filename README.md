@@ -1,9 +1,6 @@
 # AI-Driven-Calendar
 Ai Driven Calendar is brought to you by Reda Mastouri
 
-![Overview][1]
-[1]: https://assets.website-files.com/5ec848ec2b50b6cfae06f6cc/60d60f0a9ff1afafaf212698_hero-css.svg "Overview"
-
 <img src="https://assets.website-files.com/5ec848ec2b50b6cfae06f6cc/60d60f0a9ff1afafaf212698_hero-css.svg">
 
 ## 1. Tell Reclaim what you need
