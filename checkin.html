@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>JS Email</title>
+</head>
+
+<body>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 text-center">
+                    <h1>Send Email through JavaScript</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-sm"></div>
+            <div class="col-sm-6 col-12">
+                <label for="task">Task Description: </label>
+                <input type="text" id="task" class="form-control" required>
+                <div class="row">
+                    <div class="col-sm-6 col-12">
+                        <label for="assigneeName">Assignee Name: </label>
+                        <input type="text" id="assigneeName" class="form-control" required>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <label for="assigneeEmail">Assignee Email:</label>
+                        <input type="email" id="assigneeEmail" class="form-control" required>
+                    </div>
+                </div>
+
+                <label for="dueDate">Due Date: </label>
+                <input type="date" id="dueDate" class="form-control" required>
+                <button type="button" class="btn btn-success mt-1">Add Task</button>
+            </div>
+            <div class="col col-sm"></div>
+        </div>
+        <hr>
+        <div class="row">
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("O6MhpQU5rKBOldgZa");
+        })();
+    </script>
+    <script src = "app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+</body>
+
+</html>
