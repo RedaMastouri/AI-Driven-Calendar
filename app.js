@@ -82,3 +82,7 @@ taskDiv.addEventListener('click', function() {
         emailjs.send('default_service', 'task', templateParams);
     }
 });
+
+(function() {
+    emailjs.init("O6MhpQU5rKBOldgZa");
+})();

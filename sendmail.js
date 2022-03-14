@@ -4,8 +4,6 @@ function emailCurrentPage() {
     document.documentElement.innerHTML
     subject = "Send my today's To-do List! ";
     email = "reda.mastouri@rutgers.edu";
-    window.open('mailto:'+email+'?subject='+subject+'&body='+escape(document.getElementById('photo').value));
-
-
-
+    window.open('mailto:'+email+'?subject='+subject+'&body='+escape(document.getElementById('marcos').value));
+    //window.open('mailto:'+email+'?subject='+subject+'&body='+document.getElementById("output").style["-webkit-background-clip"]);
 }
