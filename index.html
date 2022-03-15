@@ -9,8 +9,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <link rel="stylesheet" href="mystyle.css">
-  
+
+  <!--EmailJS-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+    emailjs.init("O6MhpQU5rKBOldgZa");
+    })();
+  </script>
+  <!--End sendmail-->
   <title>Memorify.ai</title>
 </head>
 
@@ -37,22 +46,36 @@
     <h3> ➜ Output:</h3>
     
     <div id="output"></div>
-    <script type="text/javascript" src="takesnapshot.js"></script>
+    <script id="myscript" type="text/javascript" src="takesnapshot.js"></script>
 
-    <h3> ➜ Notes:</h3>
-    <textarea name="test" id="marcos">{⚠️ Delete me!} Add some notes in here! .. </textarea>
+    <h3> ➜ Email Details:</h3>
+    <label class='field' for="thename">🢘 to_name </label>
+    <textarea name="test" id="thename">reda.mastouri@rutgers.edu</textarea>
+
+    <label class='field'  for="themail">🢘 from_name</label>
+    <textarea name="test" id="themail">1reda.masouri@gmail.com</textarea>
+
+    <label class='field'  for="themsg">🢘 Message</label>
+    <textarea name="test" id="themsg">{⚠️ Delete me!} Add some notes in here! .. </textarea>
+    <button onclick="sendemail()">📋 Submit</button>
+    <p style="color:green" id="demo"></p>
   </div>
   
 
   <!--Send the snapshot by email-->
-  </span>
-  <br><br>
+  <br>
   <button onclick="emailCurrentPage()">📧 Email Share</button>
   <script type="text/javascript" src="sendmail.js"></script>
-  
+  <p style="color:green" id="share"></p>
 
+
+  <!--SmtpJS.com-->
+  <br>
+  <button onclick="picDiv()">📧 Save the Snapshot</button>
+  <p style="color:green" id="shared"></p>
+  <br>
   <!--Footer-->
-  <br><br>
+  
   <footer>
     <p>© 2022 Reda Mastouri</p>
   </footer>
